@@ -1,0 +1,23 @@
+{
+  "name": "gpsar",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "serve": "ws --http2  --spa"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/yaotzin68/gps-ar.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/yaotzin68/gps-ar/issues"
+  },
+  "homepage": "https://github.com/yaotzin68/gps-ar#readme",
+  "dependencies": {
+    "local-web-server": "^3.0.7"
+  }
+}
