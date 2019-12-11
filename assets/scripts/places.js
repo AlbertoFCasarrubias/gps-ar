@@ -85,7 +85,6 @@ function dynamicLoadPlaces(position) {
             console.error('Error with places API', err);
         })
 
-     */
 
     return new Promise(resolve => {
         resolve(staticLoadPlaces())
