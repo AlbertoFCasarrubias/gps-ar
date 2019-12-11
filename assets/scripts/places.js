@@ -37,7 +37,7 @@ window.onload = () => {
 function staticLoadPlaces() {
     return [
         {
-            name: "Your place name",
+            name: "Innovation Team",
             location: {
                 lat: 19.4385668, // add here latitude if using static data
                 lng: -99.2110767, // add here longitude if using static data
@@ -79,8 +79,9 @@ function dynamicLoadPlaces(position) {
         })
 
      */
-    let places = staticLoadPlaces();
-    renderPlaces(places);
+    return new Promise(resolve => {
+        resolve(staticLoadPlaces())
+    });
 };
 
 function renderPlaces(places) {
