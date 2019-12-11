@@ -12,6 +12,7 @@ window.onload = () => {
 
     if (method !== 'static') {
 
+        /*
         // first get current user location
         return navigator.geolocation.getCurrentPosition(function (position) {
             console.log(position);
@@ -31,7 +32,10 @@ window.onload = () => {
                 maximumAge: 0,
                 timeout: 27000,
             }
-        );
+        );*/
+        alert('no static')
+        let places = staticLoadPlaces();
+        renderPlaces(places);
     }
 };
 
