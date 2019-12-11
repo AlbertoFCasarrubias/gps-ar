@@ -48,7 +48,7 @@ function staticLoadPlaces() {
 
 // getting places from REST APIs
 function dynamicLoadPlaces(position) {
-    /*
+
     let params = {
         radius: 1000,    // search places not farther than this value (in meters)
         clientId: 'HZIJGI4COHQ4AI45QXKCDFJWFJ1SFHYDFCCWKPIJDWHLVQVZ',   // add your credentials here
@@ -71,6 +71,13 @@ function dynamicLoadPlaces(position) {
         .then((res) => {
             return res.json()
                 .then((resp) => {
+                    resp.response.venues.push({
+                        name: "Innovation Team",
+                        location: {
+                            lat: 19.4385668, // add here latitude if using static data
+                            lng: -99.2110767, // add here longitude if using static data
+                        }
+                    });
                     return resp.response.venues;
                 })
         })
@@ -79,15 +86,18 @@ function dynamicLoadPlaces(position) {
         })
 
      */
+
     return new Promise(resolve => {
         resolve(staticLoadPlaces())
     });
+
+     */
 };
 
 function renderPlaces(places) {
     let scene = document.querySelector('a-scene');
 
-    alert('PLACES '+ JSON.stringify(places));
+    //alert('PLACES '+ JSON.stringify(places));
 
     places.forEach((place) => {
         const latitude = place.location.lat;
