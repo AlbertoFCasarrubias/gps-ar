@@ -11,8 +11,6 @@ window.onload = () => {
     }
 
     if (method !== 'static') {
-
-        /*
         // first get current user location
         return navigator.geolocation.getCurrentPosition(function (position) {
             console.log(position);
@@ -32,10 +30,7 @@ window.onload = () => {
                 maximumAge: 0,
                 timeout: 27000,
             }
-        );*/
-        alert('no static')
-        let places = staticLoadPlaces();
-        renderPlaces(places);
+        );
     }
 };
 
@@ -47,19 +42,13 @@ function staticLoadPlaces() {
                 lat: 19.4385668, // add here latitude if using static data
                 lng: -99.2110767, // add here longitude if using static data
             }
-        },
-        {
-            name: "Your place name 0",
-            location: {
-                lat: 0, // add here latitude if using static data
-                lng: 0, // add here longitude if using static data
-            }
         }
     ];
 }
 
 // getting places from REST APIs
 function dynamicLoadPlaces(position) {
+    /*
     let params = {
         radius: 1000,    // search places not farther than this value (in meters)
         clientId: 'HZIJGI4COHQ4AI45QXKCDFJWFJ1SFHYDFCCWKPIJDWHLVQVZ',   // add your credentials here
@@ -88,6 +77,10 @@ function dynamicLoadPlaces(position) {
         .catch((err) => {
             console.error('Error with places API', err);
         })
+
+     */
+    let places = staticLoadPlaces();
+    renderPlaces(places);
 };
 
 function renderPlaces(places) {
