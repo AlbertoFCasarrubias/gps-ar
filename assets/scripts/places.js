@@ -87,7 +87,7 @@ function dynamicLoadPlaces(position) {
 function renderPlaces(places) {
     let scene = document.querySelector('a-scene');
 
-    console.log('PLACES ', places);
+    alert('PLACES '+ JSON.stringify(places));
 
     places.forEach((place) => {
         const latitude = place.location.lat;
