@@ -6,7 +6,7 @@ window.onload = () => {
 
     if (method === 'static') {
         let places = staticLoadPlaces();
-        renderPlaces(places);
+        //renderPlaces(places);
     }
 
     if (method !== 'static') {
