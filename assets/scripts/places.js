@@ -13,6 +13,10 @@ window.onload = () => {
 
         // first get current user location
         return navigator.geolocation.getCurrentPosition(function (position) {
+            console.log(position);
+
+            const coord = document.getElementById('coord');
+            coord.innerText = position.coords.latitude + ' , ' +position.coords.longitude;
 
             // than use it to load from remote APIs some places nearby
             dynamicLoadPlaces(position.coords)
