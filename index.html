@@ -12,9 +12,6 @@
 </head>
 
 <link rel="stylesheet" href="assets/styles/location-based/stylesheets/index.css">
-
-
-
 <body style='margin: 0; overflow: hidden;'>
     <div id="coord" style="position: absolute;
                             top:0;
@@ -25,14 +22,18 @@
                             background: white;
                             display: flex;
                             align-items: center;
-                            justify-content: center;">v21</div>
+                            justify-content: center;">v22</div>
     <a-scene
         cursor='rayOrigin: mouse; fuse: true; fuseTimeout: 0;'
         raycaster="objects: [gps-entity-place];"
         vr-mode-ui="enabled: false"
 		embedded
 		arjs='sourceType: webcam; sourceWidth:1280; sourceHeight:960; displayWidth: 1280; displayHeight: 960; debugUIEnabled: false;'>
-        <a-box color="red" gps-entity-place="latitude: 19.438630; longitude: -99.213789" />
+        <a-assets>
+            <a-asset-item id="obj" src="assets/obj/arbolGalleta.obj"></a-asset-item>
+            <a-asset-item id="mtl" src="assets/obj/arbolGalleta.mtl"></a-asset-item>
+        </a-assets>
+        <a-obj-model src="#obj" mtl="#mtl" gps-entity-place="latitude: 19.438630; longitude: -99.213789"></a-obj-model>
         <a-camera gps-camera rotation-reader>
 		</a-camera>
 	</a-scene>
