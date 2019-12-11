@@ -110,8 +110,8 @@ function renderPlaces(places) {
                 const label = document.createElement('span');
                 const container = document.createElement('div');
                 container.setAttribute('id', 'place-label');
-                //label.innerText = name + `lat: ${ev.target.getAttribute('location').lat} long: ${ev.target.getAttribute('location').lng}`;
-                label.innerText = name;
+                label.innerText = name + `lat: ${latitude} long: ${longitude}`;
+                //label.innerText = name;
                 container.appendChild(label);
                 document.body.appendChild(container);
 
