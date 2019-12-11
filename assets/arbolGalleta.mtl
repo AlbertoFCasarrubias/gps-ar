@@ -1,0 +1,41 @@
+newmtl arbol:Material
+illum 4
+Kd 0.80 0.80 0.80
+Ka 1.00 1.00 1.00
+Tf 1.00 1.00 1.00
+Ni 1.45
+Ks 0.50 0.50 0.50
+Ns 324.00
+newmtl arbol:wire_006135006
+illum 4
+Kd 1.00 1.00 1.00
+Ka 1.00 1.00 1.00
+Tf 1.00 1.00 1.00
+Ni 1.45
+Ks 0.50 0.50 0.50
+Ns 225.00
+newmtl blinn1SG
+illum 4
+Kd 0.61 0.00 0.00
+Ka 0.00 0.00 0.00
+Tf 1.00 1.00 1.00
+Ni 1.00
+Ks 0.50 0.50 0.50
+newmtl lambert2SG
+illum 4
+Kd 0.39 0.25 0.10
+Ka 0.00 0.00 0.00
+Tf 1.00 1.00 1.00
+Ni 1.00
+newmtl lambert3SG
+illum 4
+Kd 0.00 0.37 0.03
+Ka 0.00 0.00 0.00
+Tf 1.00 1.00 1.00
+Ni 1.00
+newmtl lambert5SG
+illum 4
+Kd 0.77 0.77 0.77
+Ka 0.00 0.00 0.00
+Tf 1.00 1.00 1.00
+Ni 1.00
