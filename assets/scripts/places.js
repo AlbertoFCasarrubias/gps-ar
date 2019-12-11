@@ -2,7 +2,7 @@ window.onload = () => {
     let method = 'dynamic';
 
     // if you want to statically add places, de-comment following line
-     method = 'static';
+     //method = 'static';
 
     if (method === 'static') {
         let places = staticLoadPlaces();
@@ -110,7 +110,8 @@ function renderPlaces(places) {
                 const label = document.createElement('span');
                 const container = document.createElement('div');
                 container.setAttribute('id', 'place-label');
-                label.innerText = name + `lat: ${ev.target.getAttribute('location').lat} long: ${ev.target.getAttribute('location').lng}`;
+                //label.innerText = name + `lat: ${ev.target.getAttribute('location').lat} long: ${ev.target.getAttribute('location').lng}`;
+                label.innerText = name;
                 container.appendChild(label);
                 document.body.appendChild(container);
 
